@@ -1,0 +1,12 @@
+%这是书上4.2节非线性规划例一的Matlab代码实现
+%有关非线性规划MatLab函数详情请见：
+%https://ww2.mathworks.cn/help/optim/ug/fmincon.html?s_tid=doc_ta
+clear 
+x0=[1,1];%n维向量的初始迭代点
+A=[2,3;1,4];%不等式约束的系数矩阵
+b=[6;5];%不等式约束的右边条件
+Aeq=[];%等式约束的系数矩阵
+beq=[];%等式约束的右边的矩阵
+VLB=[0;0];%变量下界
+VUB=[];%变量上界
+[x,fval]=fmincon('fun3',x0,A,b,Aeq,beq,VLB,VUB);
