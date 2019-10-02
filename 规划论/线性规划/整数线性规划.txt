@@ -1,0 +1,4 @@
+https://ww2.mathworks.cn/help/optim/ug/intlinprog.html?s_tid=doc_ta
+intlinprog函数可以使用
+这个是自从Matlab2014版后推出的整数线性规划，支持0，1规划
+此外自定义的分支定界法求整数线性规划的Matlab代码如jBranchBound所示
